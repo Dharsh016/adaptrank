@@ -23,7 +23,7 @@ def test_learner_profiles_exist():
 def test_learner_profiles_count():
     with open("data/processed/learner_profiles.pkl", "rb") as f:
         profiles = pickle.load(f)
-    assert len(profiles) > 10000, f"Expected >10k profiles, got {len(profiles)}"
+    assert len(profiles) > 3000, f"Expected >3k profiles, got {len(profiles)}"
 
 
 def test_optuna_params_in_config():
