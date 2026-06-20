@@ -1,5 +1,5 @@
 mlflow:
-  tracking_uri: "http://127.0.0.1:5000"
+  tracking_uri: "file:./mlruns"
   experiment_name: "adaptrank"
 data:
   raw_path: "data/raw/"
@@ -27,3 +27,4 @@ ranker:
     - age_band_enc
     - highest_education_enc
     - disability_enc
+
