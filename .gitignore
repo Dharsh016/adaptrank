@@ -7,3 +7,5 @@ mlartifacts/
 mlruns.db
 mlflow.db
 merge_backup.patch
+.vscode/
+.pytest_cache/

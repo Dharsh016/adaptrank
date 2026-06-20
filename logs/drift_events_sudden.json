@@ -1,0 +1,1186 @@
+[
+  {
+    "timestamp": "2026-06-20T10:31:52.396447",
+    "window_start": 450,
+    "window_end": 650,
+    "ndcg10_before": 0.6533,
+    "ndcg10_current": 0.0,
+    "ndcg10_drop": 0.6533,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "sum_click"
+    ],
+    "student_cohort_size": 199
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.447447",
+    "window_start": 650,
+    "window_end": 850,
+    "ndcg10_before": 0.7222,
+    "ndcg10_current": 0.5,
+    "ndcg10_drop": 0.2222,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "days_active_span"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.460444",
+    "window_start": 700,
+    "window_end": 900,
+    "ndcg10_before": 0.7222,
+    "ndcg10_current": 0.0,
+    "ndcg10_drop": 0.7222,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "n_active_weeks"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.500446",
+    "window_start": 800,
+    "window_end": 1000,
+    "ndcg10_before": 0.7167,
+    "ndcg10_current": 0.6,
+    "ndcg10_drop": 0.1167,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "avg_click_per_week"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.518443",
+    "window_start": 850,
+    "window_end": 1050,
+    "ndcg10_before": 0.7167,
+    "ndcg10_current": 0.5,
+    "ndcg10_drop": 0.2167,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "sum_click",
+      "studied_credits"
+    ],
+    "student_cohort_size": 196
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.628445",
+    "window_start": 1350,
+    "window_end": 1550,
+    "ndcg10_before": 0.8783,
+    "ndcg10_current": 0.0,
+    "ndcg10_drop": 0.8783,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "sum_click",
+      "disability_enc",
+      "num_of_prev_attempts"
+    ],
+    "student_cohort_size": 199
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.640406",
+    "window_start": 1400,
+    "window_end": 1600,
+    "ndcg10_before": 0.8783,
+    "ndcg10_current": 0.0,
+    "ndcg10_drop": 0.8783,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "sum_click",
+      "num_of_prev_attempts"
+    ],
+    "student_cohort_size": 200
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.660408",
+    "window_start": 1500,
+    "window_end": 1700,
+    "ndcg10_before": 0.8905,
+    "ndcg10_current": 0.5,
+    "ndcg10_drop": 0.3905,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.677404",
+    "window_start": 1550,
+    "window_end": 1750,
+    "ndcg10_before": 0.8905,
+    "ndcg10_current": 0.75,
+    "ndcg10_drop": 0.1405,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "studied_credits"
+    ],
+    "student_cohort_size": 196
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.692403",
+    "window_start": 1600,
+    "window_end": 1800,
+    "ndcg10_before": 0.8905,
+    "ndcg10_current": 0.5,
+    "ndcg10_drop": 0.3905,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.710407",
+    "window_start": 1650,
+    "window_end": 1850,
+    "ndcg10_before": 0.8905,
+    "ndcg10_current": 0.8,
+    "ndcg10_drop": 0.0905,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "sum_click"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.768405",
+    "window_start": 1850,
+    "window_end": 2050,
+    "ndcg10_before": 0.9202,
+    "ndcg10_current": 0.3333,
+    "ndcg10_drop": 0.5868,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "avg_click_per_week"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.783409",
+    "window_start": 1900,
+    "window_end": 2100,
+    "ndcg10_before": 0.9202,
+    "ndcg10_current": 0.5,
+    "ndcg10_drop": 0.4202,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "sum_click"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.797408",
+    "window_start": 1950,
+    "window_end": 2150,
+    "ndcg10_before": 0.9202,
+    "ndcg10_current": 0.5,
+    "ndcg10_drop": 0.4202,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "sum_click",
+      "num_of_prev_attempts"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.869405",
+    "window_start": 2250,
+    "window_end": 2450,
+    "ndcg10_before": 0.9529,
+    "ndcg10_current": 0.7718,
+    "ndcg10_drop": 0.181,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 194
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.888410",
+    "window_start": 2300,
+    "window_end": 2500,
+    "ndcg10_before": 0.9529,
+    "ndcg10_current": 0.7718,
+    "ndcg10_drop": 0.181,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "studied_credits"
+    ],
+    "student_cohort_size": 194
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.906407",
+    "window_start": 2350,
+    "window_end": 2550,
+    "ndcg10_before": 0.9529,
+    "ndcg10_current": 0.5262,
+    "ndcg10_drop": 0.4267,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "sum_click",
+      "disability_enc"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.924922",
+    "window_start": 2400,
+    "window_end": 2600,
+    "ndcg10_before": 0.9529,
+    "ndcg10_current": 0.5436,
+    "ndcg10_drop": 0.4092,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "studied_credits"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:52.972928",
+    "window_start": 2600,
+    "window_end": 2800,
+    "ndcg10_before": 0.9619,
+    "ndcg10_current": 0.8155,
+    "ndcg10_drop": 0.1464,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "sum_click",
+      "n_active_weeks"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.015921",
+    "window_start": 2800,
+    "window_end": 3000,
+    "ndcg10_before": 0.9722,
+    "ndcg10_current": 0.25,
+    "ndcg10_drop": 0.7222,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "sum_click",
+      "studied_credits"
+    ],
+    "student_cohort_size": 196
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.037958",
+    "window_start": 2850,
+    "window_end": 3050,
+    "ndcg10_before": 0.9722,
+    "ndcg10_current": 0.2,
+    "ndcg10_drop": 0.7722,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "sum_click",
+      "n_active_weeks"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.055924",
+    "window_start": 2900,
+    "window_end": 3100,
+    "ndcg10_before": 0.9722,
+    "ndcg10_current": 0.2,
+    "ndcg10_drop": 0.7722,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "sum_click",
+      "avg_click_per_week"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.070923",
+    "window_start": 2950,
+    "window_end": 3150,
+    "ndcg10_before": 0.9722,
+    "ndcg10_current": 0.3333,
+    "ndcg10_drop": 0.6389,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "sum_click",
+      "n_active_weeks"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.084922",
+    "window_start": 3000,
+    "window_end": 3200,
+    "ndcg10_before": 0.9722,
+    "ndcg10_current": 0.3155,
+    "ndcg10_drop": 0.6567,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "sum_click",
+      "disability_enc",
+      "n_active_weeks"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.102926",
+    "window_start": 3050,
+    "window_end": 3250,
+    "ndcg10_before": 0.9722,
+    "ndcg10_current": 0.6378,
+    "ndcg10_drop": 0.3344,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "avg_click_per_week",
+      "age_band_enc"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.118920",
+    "window_start": 3100,
+    "window_end": 3300,
+    "ndcg10_before": 0.9722,
+    "ndcg10_current": 0.8481,
+    "ndcg10_drop": 0.1241,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "sum_click",
+      "avg_click_per_week"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.131922",
+    "window_start": 3150,
+    "window_end": 3350,
+    "ndcg10_before": 0.9722,
+    "ndcg10_current": 0.8155,
+    "ndcg10_drop": 0.1567,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "days_active_span"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.181923",
+    "window_start": 3350,
+    "window_end": 3550,
+    "ndcg10_before": 0.9797,
+    "ndcg10_current": 0.6667,
+    "ndcg10_drop": 0.3131,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "days_active_span"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.197923",
+    "window_start": 3400,
+    "window_end": 3600,
+    "ndcg10_before": 0.9797,
+    "ndcg10_current": 0.0,
+    "ndcg10_drop": 0.9797,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "n_active_weeks"
+    ],
+    "student_cohort_size": 199
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.212919",
+    "window_start": 3450,
+    "window_end": 3650,
+    "ndcg10_before": 0.9797,
+    "ndcg10_current": 0.5,
+    "ndcg10_drop": 0.4797,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "sum_click",
+      "num_of_prev_attempts",
+      "n_active_weeks"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.228925",
+    "window_start": 3500,
+    "window_end": 3700,
+    "ndcg10_before": 0.9797,
+    "ndcg10_current": 0.0,
+    "ndcg10_drop": 0.9797,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "sum_click",
+      "n_active_weeks",
+      "days_active_span"
+    ],
+    "student_cohort_size": 199
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.244922",
+    "window_start": 3550,
+    "window_end": 3750,
+    "ndcg10_before": 0.9797,
+    "ndcg10_current": 0.31,
+    "ndcg10_drop": 0.6698,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "sum_click",
+      "n_active_weeks",
+      "days_active_span"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.267928",
+    "window_start": 3600,
+    "window_end": 3800,
+    "ndcg10_before": 0.9797,
+    "ndcg10_current": 0.5035,
+    "ndcg10_drop": 0.4762,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "sum_click",
+      "n_active_weeks",
+      "days_active_span"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.313925",
+    "window_start": 3650,
+    "window_end": 3850,
+    "ndcg10_before": 0.9797,
+    "ndcg10_current": 0.7529,
+    "ndcg10_drop": 0.2268,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "sum_click",
+      "n_active_weeks",
+      "days_active_span"
+    ],
+    "student_cohort_size": 194
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.436274",
+    "window_start": 3900,
+    "window_end": 4100,
+    "ndcg10_before": 0.9658,
+    "ndcg10_current": 0.801,
+    "ndcg10_drop": 0.1647,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.475267",
+    "window_start": 3950,
+    "window_end": 4150,
+    "ndcg10_before": 0.9658,
+    "ndcg10_current": 0.8351,
+    "ndcg10_drop": 0.1307,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "studied_credits"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.539268",
+    "window_start": 4100,
+    "window_end": 4300,
+    "ndcg10_before": 0.9559,
+    "ndcg10_current": 0.4784,
+    "ndcg10_drop": 0.4775,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "highest_education_enc",
+      "studied_credits"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.575266",
+    "window_start": 4150,
+    "window_end": 4350,
+    "ndcg10_before": 0.9559,
+    "ndcg10_current": 0.2392,
+    "ndcg10_drop": 0.7167,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "studied_credits",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 196
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.591272",
+    "window_start": 4200,
+    "window_end": 4400,
+    "ndcg10_before": 0.9559,
+    "ndcg10_current": 0.0,
+    "ndcg10_drop": 0.9559,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.606267",
+    "window_start": 4250,
+    "window_end": 4450,
+    "ndcg10_before": 0.9559,
+    "ndcg10_current": 0.3333,
+    "ndcg10_drop": 0.6226,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "n_active_weeks"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.621265",
+    "window_start": 4300,
+    "window_end": 4500,
+    "ndcg10_before": 0.9559,
+    "ndcg10_current": 0.0,
+    "ndcg10_drop": 0.9559,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "studied_credits"
+    ],
+    "student_cohort_size": 199
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.633270",
+    "window_start": 4350,
+    "window_end": 4550,
+    "ndcg10_before": 0.9559,
+    "ndcg10_current": 0.0,
+    "ndcg10_drop": 0.9559,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "studied_credits",
+      "num_of_prev_attempts"
+    ],
+    "student_cohort_size": 199
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.649124",
+    "window_start": 4400,
+    "window_end": 4600,
+    "ndcg10_before": 0.9559,
+    "ndcg10_current": 0.3333,
+    "ndcg10_drop": 0.6226,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "sum_click"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.662702",
+    "window_start": 4450,
+    "window_end": 4650,
+    "ndcg10_before": 0.9559,
+    "ndcg10_current": 0.4077,
+    "ndcg10_drop": 0.5482,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "studied_credits"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.680703",
+    "window_start": 4500,
+    "window_end": 4700,
+    "ndcg10_before": 0.9559,
+    "ndcg10_current": 0.8155,
+    "ndcg10_drop": 0.1404,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "sum_click",
+      "n_active_weeks"
+    ],
+    "student_cohort_size": 199
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.702703",
+    "window_start": 4600,
+    "window_end": 4800,
+    "ndcg10_before": 0.956,
+    "ndcg10_current": 0.8155,
+    "ndcg10_drop": 0.1405,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.748746",
+    "window_start": 4750,
+    "window_end": 4950,
+    "ndcg10_before": 0.9499,
+    "ndcg10_current": 0.7631,
+    "ndcg10_drop": 0.1868,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "sum_click"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.768702",
+    "window_start": 4800,
+    "window_end": 5000,
+    "ndcg10_before": 0.9499,
+    "ndcg10_current": 0.7718,
+    "ndcg10_drop": 0.1781,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "age_band_enc"
+    ],
+    "student_cohort_size": 194
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.788705",
+    "window_start": 4850,
+    "window_end": 5050,
+    "ndcg10_before": 0.9499,
+    "ndcg10_current": 0.5655,
+    "ndcg10_drop": 0.3844,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 196
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.803705",
+    "window_start": 4900,
+    "window_end": 5100,
+    "ndcg10_before": 0.9499,
+    "ndcg10_current": 0.2718,
+    "ndcg10_drop": 0.6781,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.823709",
+    "window_start": 4950,
+    "window_end": 5150,
+    "ndcg10_before": 0.9499,
+    "ndcg10_current": 0.8155,
+    "ndcg10_drop": 0.1344,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.843702",
+    "window_start": 5000,
+    "window_end": 5200,
+    "ndcg10_before": 0.9499,
+    "ndcg10_current": 0.6918,
+    "ndcg10_drop": 0.2581,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.860701",
+    "window_start": 5050,
+    "window_end": 5250,
+    "ndcg10_before": 0.9499,
+    "ndcg10_current": 0.6609,
+    "ndcg10_drop": 0.289,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 196
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.930707",
+    "window_start": 5150,
+    "window_end": 5350,
+    "ndcg10_before": 0.9485,
+    "ndcg10_current": 0.8216,
+    "ndcg10_drop": 0.1269,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "sum_click"
+    ],
+    "student_cohort_size": 194
+  },
+  {
+    "timestamp": "2026-06-20T10:31:53.979704",
+    "window_start": 5200,
+    "window_end": 5400,
+    "ndcg10_before": 0.9485,
+    "ndcg10_current": 0.6,
+    "ndcg10_drop": 0.3485,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "days_active_span"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.032706",
+    "window_start": 5250,
+    "window_end": 5450,
+    "ndcg10_before": 0.9485,
+    "ndcg10_current": 0.6,
+    "ndcg10_drop": 0.3485,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "studied_credits"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.088708",
+    "window_start": 5300,
+    "window_end": 5500,
+    "ndcg10_before": 0.9485,
+    "ndcg10_current": 0.5428,
+    "ndcg10_drop": 0.4058,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.150299",
+    "window_start": 5350,
+    "window_end": 5550,
+    "ndcg10_before": 0.9485,
+    "ndcg10_current": 0.619,
+    "ndcg10_drop": 0.3296,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 194
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.313242",
+    "window_start": 5750,
+    "window_end": 5950,
+    "ndcg10_before": 0.9612,
+    "ndcg10_current": 0.5,
+    "ndcg10_drop": 0.4612,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.329250",
+    "window_start": 5800,
+    "window_end": 6000,
+    "ndcg10_before": 0.9612,
+    "ndcg10_current": 0.5818,
+    "ndcg10_drop": 0.3794,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.341243",
+    "window_start": 5850,
+    "window_end": 6050,
+    "ndcg10_before": 0.9612,
+    "ndcg10_current": 0.8155,
+    "ndcg10_drop": 0.1457,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "studied_credits",
+      "disability_enc"
+    ],
+    "student_cohort_size": 199
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.379243",
+    "window_start": 6000,
+    "window_end": 6200,
+    "ndcg10_before": 0.9568,
+    "ndcg10_current": 0.5907,
+    "ndcg10_drop": 0.3661,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "studied_credits",
+      "avg_click_per_week"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.396245",
+    "window_start": 6050,
+    "window_end": 6250,
+    "ndcg10_before": 0.9568,
+    "ndcg10_current": 0.693,
+    "ndcg10_drop": 0.2638,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 196
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.459243",
+    "window_start": 6300,
+    "window_end": 6500,
+    "ndcg10_before": 0.9567,
+    "ndcg10_current": 0.8689,
+    "ndcg10_drop": 0.0878,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "studied_credits"
+    ],
+    "student_cohort_size": 195
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.477249",
+    "window_start": 6350,
+    "window_end": 6550,
+    "ndcg10_before": 0.9567,
+    "ndcg10_current": 0.7816,
+    "ndcg10_drop": 0.1752,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "highest_education_enc",
+      "sum_click"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.496248",
+    "window_start": 6400,
+    "window_end": 6600,
+    "ndcg10_before": 0.9567,
+    "ndcg10_current": 0.8727,
+    "ndcg10_drop": 0.0841,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "highest_education_enc",
+      "num_of_prev_attempts"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.532247",
+    "window_start": 6600,
+    "window_end": 6800,
+    "ndcg10_before": 0.9596,
+    "ndcg10_current": 0.5,
+    "ndcg10_drop": 0.4596,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "avg_click_per_week"
+    ],
+    "student_cohort_size": 198
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.551244",
+    "window_start": 6650,
+    "window_end": 6850,
+    "ndcg10_before": 0.9596,
+    "ndcg10_current": 0.4539,
+    "ndcg10_drop": 0.5058,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 196
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.568243",
+    "window_start": 6700,
+    "window_end": 6900,
+    "ndcg10_before": 0.9596,
+    "ndcg10_current": 0.6577,
+    "ndcg10_drop": 0.3019,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "studied_credits",
+      "disability_enc"
+    ],
+    "student_cohort_size": 196
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.624243",
+    "window_start": 6850,
+    "window_end": 7050,
+    "ndcg10_before": 0.9569,
+    "ndcg10_current": 0.6522,
+    "ndcg10_drop": 0.3047,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "studied_credits"
+    ],
+    "student_cohort_size": 197
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.644249",
+    "window_start": 6900,
+    "window_end": 7100,
+    "ndcg10_before": 0.9569,
+    "ndcg10_current": 0.8047,
+    "ndcg10_drop": 0.1522,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "avg_click_per_week"
+    ],
+    "student_cohort_size": 194
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.661246",
+    "window_start": 6950,
+    "window_end": 7150,
+    "ndcg10_before": 0.9569,
+    "ndcg10_current": 0.7246,
+    "ndcg10_drop": 0.2324,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "num_of_prev_attempts",
+      "disability_enc",
+      "highest_education_enc"
+    ],
+    "student_cohort_size": 196
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.683247",
+    "window_start": 7050,
+    "window_end": 7250,
+    "ndcg10_before": 0.9511,
+    "ndcg10_current": 0.0,
+    "ndcg10_drop": 0.9511,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "studied_credits",
+      "age_band_enc"
+    ],
+    "student_cohort_size": 200
+  },
+  {
+    "timestamp": "2026-06-20T10:31:54.695244",
+    "window_start": 7100,
+    "window_end": 7300,
+    "ndcg10_before": 0.9511,
+    "ndcg10_current": 0.0,
+    "ndcg10_drop": 0.9511,
+    "threshold_used": 0.08,
+    "drift_confirmed": true,
+    "top_shifted_features": [
+      "disability_enc",
+      "num_of_prev_attempts",
+      "n_active_weeks"
+    ],
+    "student_cohort_size": 199
+  }
+]
