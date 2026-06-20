@@ -1,0 +1,7 @@
+scenario,refit_window,avg_latency,min_latency,max_latency,recovery_rate,avg_ndcg_delta,n_events
+sudden,200,331.8,0,1850,0.905,0.36,74
+sudden,500,330.4,0,2150,0.905,0.3602,74
+gradual,200,131.4,0,500,0.929,0.4378,70
+gradual,500,131.4,0,500,0.929,0.4383,70
+slow,200,147.1,0,550,0.928,0.4462,69
+slow,500,149.3,0,550,0.928,0.4476,69
