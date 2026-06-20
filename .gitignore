@@ -9,3 +9,5 @@ mlruns.db
 data/
 mlflow.db
 merge_backup.patch
+.vscode/
+.pytest_cache/
