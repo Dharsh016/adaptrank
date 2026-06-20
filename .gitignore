@@ -1,4 +1,3 @@
-data/raw/
 __pycache__/
 *.pkl
 mlruns/
@@ -6,6 +5,5 @@ mlruns/
 venv/
 mlartifacts/
 mlruns.db
-data/
 mlflow.db
 merge_backup.patch
