@@ -1,0 +1,11 @@
+python -c "
+import sys; sys.path.insert(0,'.')
+import mlflow, yaml
+with open('config.yaml') as f:
+    cfg = yaml.safe_load(f)
+mlflow.set_tracking_uri(cfg['mlflow']['tracking_uri'])
+mlflow.set_experiment('adaptrank')
+with mlflow.start_run(run_name='connection-test'):
+    mlflow.log_metric('test', 1.0)
+print('Done — check localhost:5000 now')
+"

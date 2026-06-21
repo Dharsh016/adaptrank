@@ -861,7 +861,7 @@
   ],
   "drift_events": [
     {
-      "timestamp": "2026-06-20T14:00:34.265564",
+      "timestamp": "2026-06-20T14:27:12.738802",
       "window_start": 450,
       "window_end": 650,
       "ndcg10_before": 0.6533,
@@ -877,7 +877,7 @@
       "student_cohort_size": 199
     },
     {
-      "timestamp": "2026-06-20T14:00:34.302564",
+      "timestamp": "2026-06-20T14:27:12.772803",
       "window_start": 650,
       "window_end": 850,
       "ndcg10_before": 0.7222,
@@ -893,7 +893,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.315568",
+      "timestamp": "2026-06-20T14:27:12.781816",
       "window_start": 700,
       "window_end": 900,
       "ndcg10_before": 0.7222,
@@ -909,7 +909,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.341564",
+      "timestamp": "2026-06-20T14:27:12.803329",
       "window_start": 800,
       "window_end": 1000,
       "ndcg10_before": 0.7167,
@@ -925,7 +925,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:34.354570",
+      "timestamp": "2026-06-20T14:27:12.814332",
       "window_start": 850,
       "window_end": 1050,
       "ndcg10_before": 0.7167,
@@ -941,7 +941,7 @@
       "student_cohort_size": 196
     },
     {
-      "timestamp": "2026-06-20T14:00:34.439084",
+      "timestamp": "2026-06-20T14:27:12.879332",
       "window_start": 1350,
       "window_end": 1550,
       "ndcg10_before": 0.8783,
@@ -957,7 +957,7 @@
       "student_cohort_size": 199
     },
     {
-      "timestamp": "2026-06-20T14:00:34.446091",
+      "timestamp": "2026-06-20T14:27:12.885333",
       "window_start": 1400,
       "window_end": 1600,
       "ndcg10_before": 0.8783,
@@ -973,7 +973,7 @@
       "student_cohort_size": 200
     },
     {
-      "timestamp": "2026-06-20T14:00:34.460604",
+      "timestamp": "2026-06-20T14:27:12.898844",
       "window_start": 1500,
       "window_end": 1700,
       "ndcg10_before": 0.8905,
@@ -989,7 +989,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.470604",
+      "timestamp": "2026-06-20T14:27:12.907843",
       "window_start": 1550,
       "window_end": 1750,
       "ndcg10_before": 0.8905,
@@ -1005,7 +1005,7 @@
       "student_cohort_size": 196
     },
     {
-      "timestamp": "2026-06-20T14:00:34.478605",
+      "timestamp": "2026-06-20T14:27:12.916844",
       "window_start": 1600,
       "window_end": 1800,
       "ndcg10_before": 0.8905,
@@ -1021,7 +1021,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.490604",
+      "timestamp": "2026-06-20T14:27:12.927843",
       "window_start": 1650,
       "window_end": 1850,
       "ndcg10_before": 0.8905,
@@ -1037,7 +1037,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:34.521604",
+      "timestamp": "2026-06-20T14:27:12.954843",
       "window_start": 1850,
       "window_end": 2050,
       "ndcg10_before": 0.9202,
@@ -1053,7 +1053,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:34.529605",
+      "timestamp": "2026-06-20T14:27:12.962843",
       "window_start": 1900,
       "window_end": 2100,
       "ndcg10_before": 0.9202,
@@ -1069,7 +1069,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.538605",
+      "timestamp": "2026-06-20T14:27:12.970843",
       "window_start": 1950,
       "window_end": 2150,
       "ndcg10_before": 0.9202,
@@ -1085,7 +1085,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.580123",
+      "timestamp": "2026-06-20T14:27:13.006360",
       "window_start": 2250,
       "window_end": 2450,
       "ndcg10_before": 0.9529,
@@ -1101,7 +1101,7 @@
       "student_cohort_size": 194
     },
     {
-      "timestamp": "2026-06-20T14:00:34.593121",
+      "timestamp": "2026-06-20T14:27:13.017358",
       "window_start": 2300,
       "window_end": 2500,
       "ndcg10_before": 0.9529,
@@ -1117,7 +1117,7 @@
       "student_cohort_size": 194
     },
     {
-      "timestamp": "2026-06-20T14:00:34.603120",
+      "timestamp": "2026-06-20T14:27:13.027359",
       "window_start": 2350,
       "window_end": 2550,
       "ndcg10_before": 0.9529,
@@ -1133,7 +1133,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:34.614120",
+      "timestamp": "2026-06-20T14:27:13.036358",
       "window_start": 2400,
       "window_end": 2600,
       "ndcg10_before": 0.9529,
@@ -1149,7 +1149,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:34.640124",
+      "timestamp": "2026-06-20T14:27:13.062358",
       "window_start": 2600,
       "window_end": 2800,
       "ndcg10_before": 0.9619,
@@ -1165,7 +1165,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.662645",
+      "timestamp": "2026-06-20T14:27:13.086367",
       "window_start": 2800,
       "window_end": 3000,
       "ndcg10_before": 0.9722,
@@ -1181,7 +1181,7 @@
       "student_cohort_size": 196
     },
     {
-      "timestamp": "2026-06-20T14:00:34.672644",
+      "timestamp": "2026-06-20T14:27:13.096874",
       "window_start": 2850,
       "window_end": 3050,
       "ndcg10_before": 0.9722,
@@ -1197,7 +1197,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:34.683645",
+      "timestamp": "2026-06-20T14:27:13.107875",
       "window_start": 2900,
       "window_end": 3100,
       "ndcg10_before": 0.9722,
@@ -1213,7 +1213,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:34.691645",
+      "timestamp": "2026-06-20T14:27:13.117879",
       "window_start": 2950,
       "window_end": 3150,
       "ndcg10_before": 0.9722,
@@ -1229,7 +1229,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:34.699644",
+      "timestamp": "2026-06-20T14:27:13.126876",
       "window_start": 3000,
       "window_end": 3200,
       "ndcg10_before": 0.9722,
@@ -1245,7 +1245,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.707645",
+      "timestamp": "2026-06-20T14:27:13.135874",
       "window_start": 3050,
       "window_end": 3250,
       "ndcg10_before": 0.9722,
@@ -1261,7 +1261,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:34.716644",
+      "timestamp": "2026-06-20T14:27:13.143875",
       "window_start": 3100,
       "window_end": 3300,
       "ndcg10_before": 0.9722,
@@ -1277,7 +1277,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:34.724644",
+      "timestamp": "2026-06-20T14:27:13.152876",
       "window_start": 3150,
       "window_end": 3350,
       "ndcg10_before": 0.9722,
@@ -1293,7 +1293,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.755651",
+      "timestamp": "2026-06-20T14:27:13.177880",
       "window_start": 3350,
       "window_end": 3550,
       "ndcg10_before": 0.9797,
@@ -1309,7 +1309,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:34.762163",
+      "timestamp": "2026-06-20T14:27:13.184884",
       "window_start": 3400,
       "window_end": 3600,
       "ndcg10_before": 0.9797,
@@ -1325,7 +1325,7 @@
       "student_cohort_size": 199
     },
     {
-      "timestamp": "2026-06-20T14:00:34.771164",
+      "timestamp": "2026-06-20T14:27:13.192401",
       "window_start": 3450,
       "window_end": 3650,
       "ndcg10_before": 0.9797,
@@ -1341,7 +1341,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.778162",
+      "timestamp": "2026-06-20T14:27:13.199399",
       "window_start": 3500,
       "window_end": 3700,
       "ndcg10_before": 0.9797,
@@ -1357,7 +1357,7 @@
       "student_cohort_size": 199
     },
     {
-      "timestamp": "2026-06-20T14:00:34.788165",
+      "timestamp": "2026-06-20T14:27:13.208401",
       "window_start": 3550,
       "window_end": 3750,
       "ndcg10_before": 0.9797,
@@ -1373,7 +1373,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:34.798163",
+      "timestamp": "2026-06-20T14:27:13.219401",
       "window_start": 3600,
       "window_end": 3800,
       "ndcg10_before": 0.9797,
@@ -1389,7 +1389,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:34.809163",
+      "timestamp": "2026-06-20T14:27:13.230401",
       "window_start": 3650,
       "window_end": 3850,
       "ndcg10_before": 0.9797,
@@ -1405,7 +1405,7 @@
       "student_cohort_size": 194
     },
     {
-      "timestamp": "2026-06-20T14:00:34.847171",
+      "timestamp": "2026-06-20T14:27:13.267401",
       "window_start": 3900,
       "window_end": 4100,
       "ndcg10_before": 0.9658,
@@ -1421,7 +1421,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:34.857677",
+      "timestamp": "2026-06-20T14:27:13.278405",
       "window_start": 3950,
       "window_end": 4150,
       "ndcg10_before": 0.9658,
@@ -1437,7 +1437,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:34.881685",
+      "timestamp": "2026-06-20T14:27:13.303919",
       "window_start": 4100,
       "window_end": 4300,
       "ndcg10_before": 0.9559,
@@ -1453,7 +1453,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.890687",
+      "timestamp": "2026-06-20T14:27:13.314921",
       "window_start": 4150,
       "window_end": 4350,
       "ndcg10_before": 0.9559,
@@ -1469,7 +1469,7 @@
       "student_cohort_size": 196
     },
     {
-      "timestamp": "2026-06-20T14:00:34.898686",
+      "timestamp": "2026-06-20T14:27:13.323919",
       "window_start": 4200,
       "window_end": 4400,
       "ndcg10_before": 0.9559,
@@ -1485,7 +1485,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.907686",
+      "timestamp": "2026-06-20T14:27:13.332920",
       "window_start": 4250,
       "window_end": 4450,
       "ndcg10_before": 0.9559,
@@ -1501,7 +1501,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:34.914686",
+      "timestamp": "2026-06-20T14:27:13.340918",
       "window_start": 4300,
       "window_end": 4500,
       "ndcg10_before": 0.9559,
@@ -1517,7 +1517,7 @@
       "student_cohort_size": 199
     },
     {
-      "timestamp": "2026-06-20T14:00:34.921686",
+      "timestamp": "2026-06-20T14:27:13.348919",
       "window_start": 4350,
       "window_end": 4550,
       "ndcg10_before": 0.9559,
@@ -1533,7 +1533,7 @@
       "student_cohort_size": 199
     },
     {
-      "timestamp": "2026-06-20T14:00:34.930687",
+      "timestamp": "2026-06-20T14:27:13.358918",
       "window_start": 4400,
       "window_end": 4600,
       "ndcg10_before": 0.9559,
@@ -1549,7 +1549,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:34.938687",
+      "timestamp": "2026-06-20T14:27:13.366920",
       "window_start": 4450,
       "window_end": 4650,
       "ndcg10_before": 0.9559,
@@ -1565,7 +1565,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.945693",
+      "timestamp": "2026-06-20T14:27:13.373918",
       "window_start": 4500,
       "window_end": 4700,
       "ndcg10_before": 0.9559,
@@ -1581,7 +1581,7 @@
       "student_cohort_size": 199
     },
     {
-      "timestamp": "2026-06-20T14:00:34.960212",
+      "timestamp": "2026-06-20T14:27:13.387925",
       "window_start": 4600,
       "window_end": 4800,
       "ndcg10_before": 0.956,
@@ -1597,7 +1597,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:34.984210",
+      "timestamp": "2026-06-20T14:27:13.411438",
       "window_start": 4750,
       "window_end": 4950,
       "ndcg10_before": 0.9499,
@@ -1613,7 +1613,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:34.995210",
+      "timestamp": "2026-06-20T14:27:13.422439",
       "window_start": 4800,
       "window_end": 5000,
       "ndcg10_before": 0.9499,
@@ -1629,7 +1629,7 @@
       "student_cohort_size": 194
     },
     {
-      "timestamp": "2026-06-20T14:00:35.005210",
+      "timestamp": "2026-06-20T14:27:13.434438",
       "window_start": 4850,
       "window_end": 5050,
       "ndcg10_before": 0.9499,
@@ -1645,7 +1645,7 @@
       "student_cohort_size": 196
     },
     {
-      "timestamp": "2026-06-20T14:00:35.014210",
+      "timestamp": "2026-06-20T14:27:13.446439",
       "window_start": 4900,
       "window_end": 5100,
       "ndcg10_before": 0.9499,
@@ -1661,7 +1661,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:35.023210",
+      "timestamp": "2026-06-20T14:27:13.456439",
       "window_start": 4950,
       "window_end": 5150,
       "ndcg10_before": 0.9499,
@@ -1677,7 +1677,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:35.033210",
+      "timestamp": "2026-06-20T14:27:13.467438",
       "window_start": 5000,
       "window_end": 5200,
       "ndcg10_before": 0.9499,
@@ -1693,7 +1693,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:35.042210",
+      "timestamp": "2026-06-20T14:27:13.477447",
       "window_start": 5050,
       "window_end": 5250,
       "ndcg10_before": 0.9499,
@@ -1709,7 +1709,7 @@
       "student_cohort_size": 196
     },
     {
-      "timestamp": "2026-06-20T14:00:35.060728",
+      "timestamp": "2026-06-20T14:27:13.497960",
       "window_start": 5150,
       "window_end": 5350,
       "ndcg10_before": 0.9485,
@@ -1725,7 +1725,7 @@
       "student_cohort_size": 194
     },
     {
-      "timestamp": "2026-06-20T14:00:35.069727",
+      "timestamp": "2026-06-20T14:27:13.509960",
       "window_start": 5200,
       "window_end": 5400,
       "ndcg10_before": 0.9485,
@@ -1741,7 +1741,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:35.079729",
+      "timestamp": "2026-06-20T14:27:13.519964",
       "window_start": 5250,
       "window_end": 5450,
       "ndcg10_before": 0.9485,
@@ -1757,7 +1757,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:35.090730",
+      "timestamp": "2026-06-20T14:27:13.530961",
       "window_start": 5300,
       "window_end": 5500,
       "ndcg10_before": 0.9485,
@@ -1773,7 +1773,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:35.103728",
+      "timestamp": "2026-06-20T14:27:13.543959",
       "window_start": 5350,
       "window_end": 5550,
       "ndcg10_before": 0.9485,
@@ -1789,7 +1789,7 @@
       "student_cohort_size": 194
     },
     {
-      "timestamp": "2026-06-20T14:00:35.150734",
+      "timestamp": "2026-06-20T14:27:13.592478",
       "window_start": 5750,
       "window_end": 5950,
       "ndcg10_before": 0.9612,
@@ -1805,7 +1805,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:35.159247",
+      "timestamp": "2026-06-20T14:27:13.600478",
       "window_start": 5800,
       "window_end": 6000,
       "ndcg10_before": 0.9612,
@@ -1821,7 +1821,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:35.165247",
+      "timestamp": "2026-06-20T14:27:13.607478",
       "window_start": 5850,
       "window_end": 6050,
       "ndcg10_before": 0.9612,
@@ -1837,7 +1837,7 @@
       "student_cohort_size": 199
     },
     {
-      "timestamp": "2026-06-20T14:00:35.184246",
+      "timestamp": "2026-06-20T14:27:13.628478",
       "window_start": 6000,
       "window_end": 6200,
       "ndcg10_before": 0.9568,
@@ -1853,7 +1853,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:35.192246",
+      "timestamp": "2026-06-20T14:27:13.637478",
       "window_start": 6050,
       "window_end": 6250,
       "ndcg10_before": 0.9568,
@@ -1869,7 +1869,7 @@
       "student_cohort_size": 196
     },
     {
-      "timestamp": "2026-06-20T14:00:35.225247",
+      "timestamp": "2026-06-20T14:27:13.673478",
       "window_start": 6300,
       "window_end": 6500,
       "ndcg10_before": 0.9567,
@@ -1885,7 +1885,7 @@
       "student_cohort_size": 195
     },
     {
-      "timestamp": "2026-06-20T14:00:35.235247",
+      "timestamp": "2026-06-20T14:27:13.683486",
       "window_start": 6350,
       "window_end": 6550,
       "ndcg10_before": 0.9567,
@@ -1901,7 +1901,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:35.242247",
+      "timestamp": "2026-06-20T14:27:13.691997",
       "window_start": 6400,
       "window_end": 6600,
       "ndcg10_before": 0.9567,
@@ -1917,7 +1917,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:35.263765",
+      "timestamp": "2026-06-20T14:27:13.713996",
       "window_start": 6600,
       "window_end": 6800,
       "ndcg10_before": 0.9596,
@@ -1933,7 +1933,7 @@
       "student_cohort_size": 198
     },
     {
-      "timestamp": "2026-06-20T14:00:35.271765",
+      "timestamp": "2026-06-20T14:27:13.724999",
       "window_start": 6650,
       "window_end": 6850,
       "ndcg10_before": 0.9596,
@@ -1949,7 +1949,7 @@
       "student_cohort_size": 196
     },
     {
-      "timestamp": "2026-06-20T14:00:35.280764",
+      "timestamp": "2026-06-20T14:27:13.737999",
       "window_start": 6700,
       "window_end": 6900,
       "ndcg10_before": 0.9596,
@@ -1965,7 +1965,7 @@
       "student_cohort_size": 196
     },
     {
-      "timestamp": "2026-06-20T14:00:35.308764",
+      "timestamp": "2026-06-20T14:27:13.770999",
       "window_start": 6850,
       "window_end": 7050,
       "ndcg10_before": 0.9569,
@@ -1981,7 +1981,7 @@
       "student_cohort_size": 197
     },
     {
-      "timestamp": "2026-06-20T14:00:35.318764",
+      "timestamp": "2026-06-20T14:27:13.786009",
       "window_start": 6900,
       "window_end": 7100,
       "ndcg10_before": 0.9569,
@@ -1997,7 +1997,7 @@
       "student_cohort_size": 194
     },
     {
-      "timestamp": "2026-06-20T14:00:35.327766",
+      "timestamp": "2026-06-20T14:27:13.801537",
       "window_start": 6950,
       "window_end": 7150,
       "ndcg10_before": 0.9569,
@@ -2013,7 +2013,7 @@
       "student_cohort_size": 196
     },
     {
-      "timestamp": "2026-06-20T14:00:35.339773",
+      "timestamp": "2026-06-20T14:27:13.818066",
       "window_start": 7050,
       "window_end": 7250,
       "ndcg10_before": 0.9511,
@@ -2029,7 +2029,7 @@
       "student_cohort_size": 200
     },
     {
-      "timestamp": "2026-06-20T14:00:35.347778",
+      "timestamp": "2026-06-20T14:27:13.828696",
       "window_start": 7100,
       "window_end": 7300,
       "ndcg10_before": 0.9511,

@@ -162,11 +162,11 @@ class AdaptationEngine:
 
                 if recovery_gap <= self.recovery_threshold:
                     recovered = True
-                    print(f"  ✓ Recovered in {interactions_seen} interactions")
+                    print(f"  [OK] Recovered in {interactions_seen} interactions")
                     break
 
             if not recovered:
-                print(f"  ✗ Did not recover within {interactions_seen} interactions")
+                print(f"  [FAIL] Did not recover within {interactions_seen} interactions")
 
             result = AdaptationResult(
                 scenario            = scenario,
