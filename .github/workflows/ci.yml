@@ -1,0 +1,53 @@
+# .github/workflows/ci.yml
+
+name: AdaptRank CI
+
+on:
+  push:
+    branches: [dev, main]
+  pull_request:
+    branches: [dev, main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Phase 1 tests
+        run: pytest tests/test_phase1.py -v --tb=short
+        env:
+          PYTHONPATH: .
+
+      - name: Run Phase 2 tests
+        run: pytest tests/test_phase2.py -v --tb=short
+        env:
+          PYTHONPATH: .
+
+      - name: Run Phase 6 schema tests only
+        run: pytest tests/test_phase6.py::test_schemas_importable tests/test_phase6.py::test_health_endpoint -v --tb=short
+        env:
+          PYTHONPATH: .
+
+      - name: Run Phase 7 tests
+        run: pytest tests/test_phase7.py -v --tb=short
+        env:
+          PYTHONPATH: .

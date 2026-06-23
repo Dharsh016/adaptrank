@@ -9,11 +9,31 @@ import pandas as pd
 import lightgbm as lgb
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
+
 from src.serving.schemas import (
     RankRequest, RankResponse,
     AdaptRequest, AdaptResponse,
     HealthResponse, StudentsResponse
 )
+
+# src/serving/app.py — add after imports, before app definition
+
+from prometheus_client import Counter, Histogram, Gauge
+import time
+
+# Custom metrics
+RANK_REQUESTS      = Counter("adaptrank_rank_requests_total",
+                             "Total /rank requests", ["status"])
+ADAPT_REQUESTS     = Counter("adaptrank_adapt_requests_total",
+                             "Total /adapt requests", ["scenario", "status"])
+RANK_LATENCY       = Histogram("adaptrank_rank_latency_seconds",
+                               "Response time for /rank")
+ADAPT_LATENCY      = Histogram("adaptrank_adapt_latency_seconds",
+                               "Response time for /adapt")
+CURRENT_NDCG       = Gauge("adaptrank_current_ndcg",
+                           "Most recent NDCG@10 from /rank calls")
+DRIFT_EVENTS_TOTAL = Gauge("adaptrank_drift_events_detected",
+                           "Total drift events in last /adapt call", ["scenario"])
 
 # ------------------------------------------------------------------ #
 # Global state — loaded once at startup
@@ -68,7 +88,9 @@ app = FastAPI(
     version     = "1.0.0",
     lifespan    = lifespan
 )
-
+from prometheus_fastapi_instrumentator import Instrumentator
+# Instrument the API for Prometheus metrics
+Instrumentator().instrument(app).expose(app)
 
 # ------------------------------------------------------------------ #
 # Health check
@@ -106,87 +128,95 @@ def get_students():
 # ------------------------------------------------------------------ #
 @app.post("/rank", response_model=RankResponse)
 def rank_courses(request: RankRequest):
-    """
-    Rank all courses for a given student_id.
-    Returns top_k courses sorted by predicted relevance score.
-    """
-    if MODEL is None or DF is None:
-        raise HTTPException(status_code=503, detail="Model not loaded")
+    start = time.time()
+    try:
+        if MODEL is None or DF is None:
+            RANK_REQUESTS.labels(status="error").inc()
+            raise HTTPException(status_code=503, detail="Model not loaded")
 
-    student_df = DF[DF["id_student"] == request.student_id].copy()
+        student_df = DF[DF["id_student"] == request.student_id].copy()
+        if student_df.empty:
+            RANK_REQUESTS.labels(status="not_found").inc()
+            raise HTTPException(status_code=404,
+                detail=f"Student {request.student_id} not found")
 
-    if student_df.empty:
-        raise HTTPException(
-            status_code=404,
-            detail=f"Student {request.student_id} not found in dataset"
+        X      = student_df[FEATURE_COLS].fillna(0).values
+        scores = MODEL.predict(X)
+        order  = np.argsort(scores)[::-1][:request.top_k]
+        courses = student_df["code_module"].values[order].tolist()
+        s_list  = [round(float(s), 4) for s in scores[order]]
+
+        ndcg_val = None
+        if "relevance" in student_df.columns and len(student_df) >= 2:
+            from sklearn.metrics import ndcg_score as sk_ndcg
+            y = student_df["relevance"].values
+            try:
+                ndcg_val = round(float(
+                    sk_ndcg(y.reshape(1,-1), scores.reshape(1,-1), k=10)
+                ), 4)
+                CURRENT_NDCG.set(ndcg_val)
+            except Exception:
+                pass
+
+        RANK_REQUESTS.labels(status="ok").inc()
+        RANK_LATENCY.observe(time.time() - start)
+
+        return RankResponse(
+            student_id=request.student_id,
+            ranked_courses=courses,
+            scores=s_list,
+            ndcg_current=ndcg_val,
+            message=f"Ranked {len(courses)} courses"
         )
-
-    X      = student_df[FEATURE_COLS].fillna(0).values
-    scores = MODEL.predict(X)
-
-    # Sort by score descending
-    order   = np.argsort(scores)[::-1][:request.top_k]
-    courses = student_df["code_module"].values[order].tolist()
-    s_list  = [round(float(s), 4) for s in scores[order]]
-
-    # Compute NDCG@10 for this student if ground truth available
-    ndcg_val = None
-    if "relevance" in student_df.columns and len(student_df) >= 2:
-        from sklearn.metrics import ndcg_score as sk_ndcg
-        y    = student_df["relevance"].values
-        try:
-            ndcg_val = round(float(
-                sk_ndcg(y.reshape(1,-1), scores.reshape(1,-1), k=10)
-            ), 4)
-        except Exception:
-            ndcg_val = None
-
-    return RankResponse(
-        student_id     = request.student_id,
-        ranked_courses = courses,
-        scores         = s_list,
-        ndcg_current   = ndcg_val,
-        message        = f"Ranked {len(courses)} courses"
-    )
-
+    except HTTPException:
+        raise
+    except Exception as e:
+        RANK_REQUESTS.labels(status="error").inc()
+        raise HTTPException(status_code=500, detail=str(e))
 
 # ------------------------------------------------------------------ #
 # /adapt — Dev B
 # ------------------------------------------------------------------ #
 @app.post("/adapt", response_model=AdaptResponse)
 def adapt_model(request: AdaptRequest):
-    """
-    Trigger full agent pipeline for a given scenario.
-    Detects drift, refits model, returns adaptation report.
-    """
-    if MODEL is None:
-        raise HTTPException(status_code=503, detail="Model not loaded")
+    start = time.time()
+    try:
+        if MODEL is None:
+            ADAPT_REQUESTS.labels(scenario=request.scenario, status="error").inc()
+            raise HTTPException(status_code=503, detail="Model not loaded")
 
-    valid_scenarios = ["sudden", "gradual", "slow"]
-    if request.scenario not in valid_scenarios:
-        raise HTTPException(
-            status_code=400,
-            detail=f"scenario must be one of {valid_scenarios}"
+        valid_scenarios = ["sudden", "gradual", "slow"]
+        if request.scenario not in valid_scenarios:
+            ADAPT_REQUESTS.labels(scenario="invalid", status="error").inc()
+            raise HTTPException(status_code=400,
+                detail=f"scenario must be one of {valid_scenarios}")
+
+        sim_path = os.path.join(
+            CFG["data"]["processed_path"], f"sim_{request.scenario}.parquet"
         )
+        if not os.path.exists(sim_path):
+            raise HTTPException(status_code=404,
+                detail=f"Simulation file not found: {sim_path}")
 
-    sim_path = os.path.join(
-        CFG["data"]["processed_path"], f"sim_{request.scenario}.parquet"
-    )
-    if not os.path.exists(sim_path):
-        raise HTTPException(
-            status_code=404,
-            detail=f"Simulation file not found: {sim_path}"
+        from src.agents.pipeline import run_pipeline
+        final_state = run_pipeline(request.scenario)
+
+        n_events = len(final_state.get("drift_events") or [])
+        DRIFT_EVENTS_TOTAL.labels(scenario=request.scenario).set(n_events)
+        ADAPT_REQUESTS.labels(scenario=request.scenario, status="ok").inc()
+        ADAPT_LATENCY.observe(time.time() - start)
+
+        return AdaptResponse(
+            scenario=request.scenario,
+            n_drift_events=n_events,
+            avg_latency=round(final_state.get("avg_latency") or 0.0, 2),
+            recovery_rate=round(final_state.get("recovery_rate") or 0.0, 4),
+            baseline_ndcg=round(final_state.get("baseline_ndcg") or 0.0, 4),
+            explanation=final_state.get("explanation_report") or "N/A",
+            message="Adaptation complete"
         )
-
-    from src.agents.pipeline import run_pipeline
-    final_state = run_pipeline(request.scenario)
-
-    return AdaptResponse(
-        scenario       = request.scenario,
-        n_drift_events = len(final_state.get("drift_events") or []),
-        avg_latency    = round(final_state.get("avg_latency") or 0.0, 2),
-        recovery_rate  = round(final_state.get("recovery_rate") or 0.0, 4),
-        baseline_ndcg  = round(final_state.get("baseline_ndcg") or 0.0, 4),
-        explanation    = final_state.get("explanation_report") or "N/A",
-        message        = "Adaptation complete"
-    )
+    except HTTPException:
+        raise
+    except Exception as e:
+        ADAPT_REQUESTS.labels(scenario=request.scenario, status="error").inc()
+        raise HTTPException(status_code=500, detail=str(e))
