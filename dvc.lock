@@ -1,0 +1,94 @@
+schema: '2.0'
+stages:
+  build_dataset:
+    cmd: python src/pipeline/features.py
+    deps:
+    - path: data/raw/courses.csv
+      hash: md5
+      md5: 4c3df8a42a98a0d26b22f507007c31a8
+      size: 526
+    - path: data/raw/studentInfo.csv
+      hash: md5
+      md5: ee1b84540c2fc960afa6a42c48e9f9b3
+      size: 3462763
+    - path: data/raw/studentRegistration.csv
+      hash: md5
+      md5: 812f24d90c465ced31509555213eef5b
+      size: 1132550
+    - path: data/raw/studentVle.csv
+      hash: md5
+      md5: b8aae6f4ffd1523319aeb56d66b17f72
+      size: 453836331
+    - path: src/pipeline/features.py
+      hash: md5
+      md5: b358afb9eb3b91deaf21916bdcba41b9
+      size: 5790
+    - path: src/pipeline/labels.py
+      hash: md5
+      md5: 960cf122d8270d2cda8fe297c8068b85
+      size: 945
+    outs:
+    - path: data/processed/ranking_dataset.parquet
+      hash: md5
+      md5: feafff25e99947e6b94c1ca12e5437a4
+      size: 196726
+  train_baseline:
+    cmd: python src/ranker/baseline.py
+    deps:
+    - path: config.yaml
+      hash: md5
+      md5: bf868cc1566754c7feb789717d0e2d41
+      size: 636
+    - path: data/processed/ranking_dataset.parquet
+      hash: md5
+      md5: feafff25e99947e6b94c1ca12e5437a4
+      size: 196726
+    - path: src/ranker/baseline.py
+      hash: md5
+      md5: 5ce82b866079910600836c44a55d8719
+      size: 3671
+    outs:
+    - path: data/processed/baseline_model.txt
+      hash: md5
+      md5: 043830baa8d548c77a54a517d5593ab6
+      size: 36883
+  build_embeddings:
+    cmd: python src/pipeline/embeddings.py
+    deps:
+    - path: config.yaml
+      hash: md5
+      md5: bf868cc1566754c7feb789717d0e2d41
+      size: 636
+    - path: data/raw/courses.csv
+      hash: md5
+      md5: 4c3df8a42a98a0d26b22f507007c31a8
+      size: 526
+    - path: src/pipeline/embeddings.py
+      hash: md5
+      md5: 0f4eab4311ce43bff4fc2a913deab57b
+      size: 2377
+    outs:
+    - path: data/processed/course_embeddings.pkl
+      hash: md5
+      md5: fe5cfcc9f810409ceb8cca0d313a2b21
+      size: 11154
+  build_profiles:
+    cmd: python src/pipeline/profiles.py
+    deps:
+    - path: data/processed/course_embeddings.pkl
+      hash: md5
+      md5: fe5cfcc9f810409ceb8cca0d313a2b21
+      size: 11154
+    - path: data/processed/ranking_dataset.parquet
+      hash: md5
+      md5: feafff25e99947e6b94c1ca12e5437a4
+      size: 196726
+    - path: src/pipeline/profiles.py
+      hash: md5
+      md5: 3400c0b96a385764aefc54fde5ab329c
+      size: 1925
+    outs:
+    - path: data/processed/learner_profiles.pkl
+      hash: md5
+      md5: c0aadfd0a36e45b3d65141cbe1cab44e
+      size: 5573158

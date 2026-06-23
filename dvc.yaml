@@ -1,0 +1,41 @@
+# dvc.yaml
+
+stages:
+  build_dataset:
+    cmd: python src/pipeline/features.py
+    deps:
+      - src/pipeline/features.py
+      - src/pipeline/labels.py
+      - data/raw/studentInfo.csv
+      - data/raw/studentVle.csv
+      - data/raw/studentRegistration.csv
+      - data/raw/courses.csv
+    outs:
+      - data/processed/ranking_dataset.parquet
+
+  train_baseline:
+    cmd: python src/ranker/baseline.py
+    deps:
+      - src/ranker/baseline.py
+      - data/processed/ranking_dataset.parquet
+      - config.yaml
+    outs:
+      - data/processed/baseline_model.txt
+
+  build_embeddings:
+    cmd: python src/pipeline/embeddings.py
+    deps:
+      - src/pipeline/embeddings.py
+      - data/raw/courses.csv
+      - config.yaml
+    outs:
+      - data/processed/course_embeddings.pkl
+
+  build_profiles:
+    cmd: python src/pipeline/profiles.py
+    deps:
+      - src/pipeline/profiles.py
+      - data/processed/ranking_dataset.parquet
+      - data/processed/course_embeddings.pkl
+    outs:
+      - data/processed/learner_profiles.pkl
